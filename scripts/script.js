@@ -4,25 +4,31 @@ let pageCount = pages.length;
 let currentPage = 0;
 
 function nextPage() {
-    if(currentPage + 1 >= pageCount)
+    if(currentPage + 1 >= pageCount) {
+        console.log("Already at last page.");
         return;
+    }
 
     pages[currentPage].classList.toggle('hidden');
     
     currentPage++;
     
     pages[currentPage].classList.toggle('hidden');
+    console.log("Next page activated.");
 }
 
 function prevPage() {
-    if(currentPage - 1 < 0)
+    if(currentPage - 1 < 0) {
+        console.log("Already at first page.");
         return;
+    }
 
     pages[currentPage].classList.toggle('hidden');
     
     currentPage--;
     
     pages[currentPage].classList.toggle('hidden');
+    console.log("Previous page activated.");
 }
 
 function toggleNav() {
