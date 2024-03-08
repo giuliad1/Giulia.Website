@@ -1,0 +1,55 @@
+@font-face{
+    font-family : Dosis; 
+    src: url("../font/Dosis-Regular.ttf"); 
+}
+
+:root{
+    font-size : 10 px; 
+
+    --c1: honeydew; 
+    --c2: powderblue; 
+}
+*{
+    font-family: Dosis, Arial, Helvetica, sans-serif;
+}
+body { 
+    background : var(--c1); 
+
+}
+#navbar {
+    background-color: var(--c2); 
+    width: 100%; 
+
+    position: sticky; 
+    top : 0px; 
+
+    display: flex; 
+    flex-direction: row; 
+    justify-content : space-between; 
+    align-items: center; 
+}
+.button-container a{
+    text-decoration: none; 
+    /* gets rid of the lines on the links/buttons  */
+    /* the a tag is for links */
+}
+/* paddding between border and text, margin between outside and border */
+.buttons{
+    /* only buttons with button class */
+    color: blue; 
+    border: 2px solid skyblue; 
+    /* solid is for borders */
+    ; 
+}
+.content {
+    margin: 0 10px 0 10px; 
+    /* gives margin */
+}
+button {
+    /* every button */
+    color : blueviolet; 
+}
+.icon {
+    margin : 10px 0 10px 0 ; 
+    /* top right bottom left */
+}
