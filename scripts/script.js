@@ -1,12 +1,7 @@
-let pageCount = 3;
+// Make variables
+const pages = document.getElementsByClassName("page");
+let pageCount = pages.length;
 let currentPage = 0;
-let pages;
-
-initializePages();
-
-function initializePages() {
-    pages = document.getElementsByClassName('page');
-}
 
 function nextPage() {
     if(currentPage + 1 >= pageCount)
@@ -34,3 +29,9 @@ function toggleNav() {
     let navbar = document.getElementById('sidebar-nav');
     navbar.classList.toggle('hidden');
 }
+
+const leftButton = document.getElementById("page-left-button");
+const rightButton = document.getElementById("page-right-button");
+
+leftButton.onclick = prevPage;
+rightButton.onclick = nextPage;

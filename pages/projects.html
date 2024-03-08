@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <!-- when inside the pages folder, need ../ to go back  -->
-    <link rel = "stylesheet" href = "../style/project-style.css"> 
+    <link rel="stylesheet" href="../style/project-style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <script defer src="../scripts/script.js"></script>
 </head>
+
 <body>
-    <!-- <ul style = "list-style-type: square;"> -->
-        <!-- turns circles into squares for unordered list -->
- <!-- unordered list  -->
-        <!-- <li>Something</li>
-        <li>Something else</li>
-        <li>Something else too</li>
-    </ul>
-    <ol style="list-style-type: lower-greek:">
-        <li>carrots</li>
-        <li>eggs</li>
-        <li>tomatoes</li>
-    </ol> -->
-
-
-<div class = "flex-row" id="navbar">
-    <div class = "left-nav-container">
-        <img src = "../Fishy.png">
-        <p> gdisalvo25@pascack.org | 201-431-5465 </p>     
-    </div> 
-    <div>
-        <button class = "hamburger-button"><img src = "../icons/menu.svg"></button>
-    </div> 
-</div>
-    <div class = "header-container flex-row"
-        <h1>
-            Projects
-        </h1>
-        <div class = "page-nav flex-row">
-            <button class = "arrow-button"><img src = "../icons/leftarrow.svg"></button>
-            <p>current page / pages</p>
-            <button class = "arrow-button"><img src = "../icons/rightarrow.svg"></button>
+    <nav id="navbar">
+        <div class="icon- container">
+            <img class="icon" src="usgdf">
         </div>
-    </div>
+        <div class="button-container">
+            <a href="../">
+                <button class="buttons"> Home </button>
+            </a>
+            <a href="../pages/about.html">
+                <button class="buttons"> About Me </button>
+            </a>
+            <a href="../pages/projects.html">
+                <button class="buttons"> My Projects </button>
+            </a>
+            <a href="../pages/contact.html">
+                <button class="buttons"> Contact Me </button>
+            </a>
+        </div>
+    </nav>
+    <main>
+
+        <div class="header-container flex-row" <h1>
+            Projects
+            </h1>
+            <div class="page-nav flex-row">
+                <button id="page-left-button" class="arrow-button"><img src="../icons/leftarrow.svg"></button>
+                <p>current page / pages</p>
+                <button id="page-right-button" class="arrow-button"><img src="../icons/rightarrow.svg"></button>
+            </div>
+        </div>
 
 
-    <div class="page" id="page-0">
-        Page One
-    </div>
+        <div class="page" id="page-0">
+            2020 - 2021 Projects
+        </div>
 
-    <div class="page hidden" id="page-1">
-        Page Two
-    </div>
+        <div class="page hidden" id="page-1">
+            2021 - 2022 Projects
+        </div>
 
-    <div class="page hidden" id="page-2">
-        Page Three
-    </div>
+        <div class="page hidden" id="page-2">
+            2022 - 2023 Projects
+        </div>
+
+        <div class="page hidden" id="page-3">
+            2023 - Present Projects
+        </div>
+    </main>
 
 </body>
+
 </html>
